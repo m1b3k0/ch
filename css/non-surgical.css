@@ -1,0 +1,88 @@
+.hero-non-surgical {
+    height: 50vh;
+    background-image: url('../images/main.jpg');
+}
+
+.treatment-intro {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.treatment-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.treatment-details {
+    padding: 100px 0;
+    background-color: var(--color-secondary);
+}
+
+.treatment-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.treatment-card h3 {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 20px;
+    margin: 0;
+}
+
+.treatment-content {
+    display: flex;
+    padding: 30px;
+}
+
+.treatment-info {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.treatment-image {
+    flex: 1;
+}
+
+.treatment-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.treatment-info ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.treatment-faq {
+    padding: 100px 0;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h3 {
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .treatment-content {
+        flex-direction: column;
+    }
+
+    .treatment-info {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}

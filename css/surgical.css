@@ -1,0 +1,79 @@
+.hero-surgical {
+    height: 50vh;
+    background-image: url('../images/main.jpg');
+}
+
+.surgical-intro {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.surgical-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.surgical-category {
+    padding: 80px 0;
+}
+
+.surgical-category:nth-child(even) {
+    background-color: var(--color-secondary);
+}
+
+.procedure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.procedure-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.procedure-card:hover {
+    transform: translateY(-10px);
+}
+
+.procedure-card h3 {
+    color: var(--color-accent);
+    margin-bottom: 15px;
+}
+
+.surgical-process {
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.step h3 {
+    color: var(--color-accent);
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .process-steps {
+        flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 30px;
+    }
+}

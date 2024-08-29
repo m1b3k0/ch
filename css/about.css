@@ -1,0 +1,150 @@
+.hero-about {
+    height: 50vh;
+    background-image: url('../images/main.jpg');
+}
+
+.about-intro {
+    padding: 100px 0;
+}
+
+.about-intro .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.qualifications {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 100px 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 1rem auto 1rem auto;
+    padding: 40px 0px 1px 0px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: var(--color-accent);
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline li:nth-child(odd) {
+    padding-right: 50%;
+    text-align: right;
+}
+
+.timeline li:nth-child(even) {
+    padding-left: 50%;
+    text-align: left;
+}
+
+.timeline h3 {
+    margin: 1rem 1.5rem 1rem 1rem;
+    color: var(--color-accent);
+}
+
+.timeline span{
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.for-patients {
+    padding: 100px 0;
+    background-color: var(--color-secondary);
+}
+
+.patient-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+}
+
+.info-card h3 {
+    color: var(--color-accent);
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-intro .container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline li::before {
+        left: 20px;
+    }
+
+    .timeline li {
+        padding-left: 50px !important;
+        text-align: left !important;
+    }
+
+    .timeline h3 {
+        margin: 1rem 0rem 0.7rem 0.2rem;
+        color: var(--color-accent);
+    }
+    
+    .timeline span{
+        margin: 1rem 0rem 0.7rem 0.2rem;
+    }
+}

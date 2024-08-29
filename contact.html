@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Dr. Dr. Sabine Schmidt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">Dr. Dr. Sabine Schmidt</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Über mich</a></li>
+                    <li><a href="non-surgical.html">Non-Surgical</a></li>
+                    <li><a href="surgical.html">Surgical</a></li>
+                    <li><a href="prices.html">Richtpreise</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+         </header>
+
+
+            <main >
+          
+        <section class="hero hero-contact">
+            <div class="container">
+                <h1 class="hero-title">Kontakt</h1>
+                <p class="hero-subtitle">Wir freuen uns, von Ihnen zu hören</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h2>Kontaktieren Sie uns</h2>
+                        <p>Für Fragen oder zur Terminvereinbarung stehen wir Ihnen gerne zur Verfügung.</p>
+                        <ul class="contact-list">
+                            <li>
+                                <strong>Adresse:</strong><br>
+                                Musterstraße 123<br>
+                                1234 Musterstadt<br>
+                                Österreich
+                            </li>
+                            <li><strong>Telefon:</strong> +43 123 456 789</li>
+                            <li><strong>E-Mail:</strong> info@drschmidt.at</li>
+                        </ul>
+                        <h3>Öffnungszeiten</h3>
+                        <ul class="opening-hours">
+                            <li><strong>Montag - Freitag:</strong> 9:00 - 18:00 Uhr</li>
+                            <li><strong>Samstag:</strong> Nach Vereinbarung</li>
+                            <li><strong>Sonntag:</strong> Geschlossen</li>
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <h2>Schreiben Sie uns</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Nachricht</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Nachricht senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Unsere Lage</h2>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Dr. Dr. Sabine Schmidt</h3>
+                    <p>Musterstraße 123<br>1234 Musterstadt, Österreich</p>
+                    <p>Tel: +43 123 456 789<br>Email: info@drschmidt.at</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Schnelllinks</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Über mich</a></li>
+                        <li><a href="non-surgical.html">Non-Surgical</a></li>
+                        <li><a href="surgical.html">Surgical</a></li>
+                        <li><a href="prices.html">Richtpreise</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Folgen Sie uns</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" class="icon-facebook">Facebook</a></li>
+                        <li><a href="#" class="icon-instagram">Instagram</a></li>
+                        <li><a href="#" class="icon-linkedin">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Dr. Sabine Schmidt. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>
